@@ -2,9 +2,10 @@
   "name": "ionic-base",
   "private": "true",
   "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.0-rc.1"
+    "ionic": "driftyco/ionic-bower#1.2.4"
   },
   "dependencies": {
-    "ngCordova": "~0.1.12-alpha"
+    "ngCordova": "^0.1.24-alpha",
+    "ionic-material": "~0.4.2"
   }
 }

@@ -3,30 +3,42 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="lib/ionic/css/ionic.css"/>
+    <link rel="stylesheet" href="lib/waves/dist/waves.min.css"/>
+    <link rel="stylesheet" href="lib/ionic-material/dist/ionic.material.css"/>
+    <link rel="stylesheet" href="lib/ionic-material/dist/ionic.material.min.css"/>
+    <!-- endbower -->
+
     <title></title>
 
     <!-- compiled css output -->
-    <link href="dist/css/ionic.app.css" rel="stylesheet">
+
+  </head>
+  <body ng-app="starter">
 
     <!-- ionic/angularjs js -->
+    <!-- bower:js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
+    <script src="lib/ionic/js/ionic.js"></script>
+    <script src="lib/waves/dist/waves.min.js"></script>
+    <script src="lib/ionic-material/dist/ionic.material.js"></script>
+    <!-- endbower -->
+
     <!-- cordova script (this will be a 404 during development) -->
+
     <script src="lib/ngCordova/dist/ng-cordova.js"></script>
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
     <script src="dist/app.js"></script>
     <script src="dist/templates.js"></script>
-
-  </head>
-  <body ng-app="starter">
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
     <ion-nav-bar class="bar-positive">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
+      <ion-nav-back-button></ion-nav-back-button>
     </ion-nav-bar>
     <!--
       The views will be rendered in the <ion-nav-view> directive below

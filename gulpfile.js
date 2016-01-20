@@ -56,6 +56,13 @@ gulp.task('templates', function(){
     .pipe(gulp.dest('www/dist'));
 });
 
+gulp.task('wiredep', function () {
+  var wiredep = require('wiredep').stream;
+  gulp.src('www/*.html')
+    .pipe(wiredep())
+    .pipe(gulp.dest('www'));
+});
+
 gulp.task('watch', function() {
   gulp.watch(paths.sass, ['sass']);
   gulp.watch(paths.js, ['build']);
