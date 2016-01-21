@@ -59,7 +59,18 @@ gulp.task('templates', function(){
 gulp.task('wiredep', function () {
   var wiredep = require('wiredep').stream;
   gulp.src('www/*.html')
-    .pipe(wiredep())
+    .pipe(wiredep({
+      exclude: [
+            'lib/angular/angular.js',
+            'angular-animate.js',
+            'angular-sanitize.js',
+            'angular-ui-router.js',
+            'angular-router.js',
+            'ionic.material.js',
+            'ionic-angular.js',
+            'ng-cordova.js'
+        ]
+    }))
     .pipe(gulp.dest('www'));
 });
 
