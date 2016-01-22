@@ -41,6 +41,13 @@ starter.app = angular.module('starter', ['ionic', 'starter.controllers', 'starte
     abstract: true,
     templateUrl: "templates/tabs.html"
   })
+  .state('profile', {
+    url: '/profile',
+        templateUrl: 'templates/profile.html',
+        controller: 'ProfileCtrl'
+    }
+  )
+
 
   // Each tab has its own nav history stack:
 
