@@ -13,9 +13,12 @@ var templateCache = require('gulp-angular-templatecache');
 var header = require('gulp-header');
 
 var pkg = require('./package.json');
+var babel = require("gulp-babel");
+var plumber = require("gulp-plumber");
 
 var paths = {
   sass: ['src/scss/**/*.scss'],
+  es6: ['./src/es6/*.js'],
   js: ['src/js/**/*.js'],
   templates: ['src/templates/**/*.html']
 };
@@ -23,7 +26,7 @@ var paths = {
 gulp.task('bump', require('gulp-cordova-bump'));
 
 
-gulp.task('default', ['sass', 'templates', 'build']);
+gulp.task('default', ['babel', 'sass', 'templates', 'build']);
 
 gulp.task('sass', function(done) {
   gulp.src('src/scss/*.scss')
@@ -35,6 +38,13 @@ gulp.task('sass', function(done) {
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest('./www/dist/css/'))
     .on('end', done);
+});
+
+gulp.task("babel", function () {
+  return gulp.src(paths.es6)
+    .pipe(plumber())
+    .pipe(babel({presets: ['es2015']}))
+    .pipe(gulp.dest("www/dist/js"));
 });
 
 gulp.task('build', function () {
@@ -75,6 +85,7 @@ gulp.task('wiredep', function () {
 });
 
 gulp.task('watch', function() {
+  gulp.watch(paths.es6, ['babel']);
   gulp.watch(paths.sass, ['sass']);
   gulp.watch(paths.js, ['build']);
   gulp.watch(paths.templates, ['templates']);
