@@ -18,7 +18,7 @@ var plumber = require("gulp-plumber");
 
 var paths = {
   sass: ['src/scss/**/*.scss'],
-  es6: ['./src/es6/**/*.js'],
+  es6: ['src/es6/**/*.js'],
   js: ['src/js/**/*.js'],
   templates: ['src/templates/**/*.html']
 };
@@ -26,7 +26,7 @@ var paths = {
 gulp.task('bump', require('gulp-cordova-bump'));
 
 
-gulp.task('default', ['babel', 'sass', 'templates', 'build']);
+gulp.task('default', ['babel', 'sass', 'templates']);
 
 gulp.task('sass', function(done) {
   gulp.src('src/scss/*.scss')
@@ -53,8 +53,8 @@ gulp.task('build', function () {
           .pipe(ngAnnotate({
             single_quotes: true
           }))
-          .pipe(concat('app.js'))
-          .pipe(uglify())
+          //.pipe(concat('js/app.js'))
+          //.pipe(uglify())
           .pipe(sourcemaps.write())
           .pipe(header('window.VERSION = "<%= pkg.version %>";', { pkg : pkg } ))
         .pipe(gulp.dest('www/dist'));
