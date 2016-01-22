@@ -18,7 +18,7 @@ var plumber = require("gulp-plumber");
 
 var paths = {
   sass: ['src/scss/**/*.scss'],
-  es6: ['./src/es6/*.js'],
+  es6: ['./src/es6/**/*.js'],
   js: ['src/js/**/*.js'],
   templates: ['src/templates/**/*.html']
 };
@@ -48,7 +48,7 @@ gulp.task("babel", function () {
 });
 
 gulp.task('build', function () {
-  return gulp.src('src/js/**/*.js')
+  return gulp.src('src/es6/**/*.js')
         .pipe(sourcemaps.init())
           .pipe(ngAnnotate({
             single_quotes: true
