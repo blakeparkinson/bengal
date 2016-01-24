@@ -3,6 +3,7 @@ starter.controllers.controller('ProfileCtrl', function($scope, $stateParams) {
   for (let i = 0; i < 10; i++) {
    console.log(i);
 }
-console.log('yoooo');
+$scope.rangeVal = 44;
+
 
 });
