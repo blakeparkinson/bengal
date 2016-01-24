@@ -17,5 +17,15 @@ $scope.showSelectValue = function(select){
     $scope.clockwise = true;
   }
 };
+console.log(tt);
+
+console.log('yooo');
+
+var gow = [];
+for (let t = 0; t < 10; t++){
+  gow.push(t);
+}
+$scope.gow = gow;
+console.log($scope.gow);
 
 });
