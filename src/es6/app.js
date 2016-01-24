@@ -10,7 +10,7 @@ var starter = {
   services: angular.module('starter.services', [])
 };
 
-starter.app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngCordova'])
+starter.app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngCordova', 'angular-svg-round-progress'])
 
 .run(function($ionicPlatform, $rootScope) {
   $rootScope.VERSION = window.VERSION;

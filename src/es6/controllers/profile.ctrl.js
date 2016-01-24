@@ -5,5 +5,17 @@ starter.controllers.controller('ProfileCtrl', function($scope, $stateParams) {
 }
 $scope.rangeVal = 44;
 
+$scope.options = ['clockwise', 'counterclockwise'];
+
+$scope.select = "Clockwise";
+$scope.clockwise = true;
+$scope.showSelectValue = function(select){
+  if (select != 'Clockwise'){
+    $scope.clockwise = false;
+  }
+  else{
+    $scope.clockwise = true;
+  }
+};
 
 });

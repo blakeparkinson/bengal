@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "ngCordova": "^0.1.24-alpha",
-    "ionic-material": "~0.4.2"
+    "ionic-material": "~0.4.2",
+    "angular-svg-round-progressbar": "~0.3.10"
   }
 }

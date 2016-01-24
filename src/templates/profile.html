@@ -1,12 +1,24 @@
 <ion-view view-title="{{world}}">
   <ion-content class="padding">
-    <div class="list">
-  <div class="item range range-positive">
-    <i class="icon ion-ios-circle-outline"></i>
-    <input type="range" name="volume" min="0" max="360" value="{{rangeVal}}" ng-model="rangeVal">
-    <i class="icon ion-record"></i>
-  </div>
-  <div>{{rangeVal}}</div>
-</div>
+    <div animation-delay="0" animation="easeInOutQuart" clockwise="clockwise" bgcolor="#fff" clockwise="true" color="#45ccce" current="rangeVal" duration="800" max="360" radius="100" responsive="true" round-progress stroke="20"></div>
 
-    <ion-content class="padding"></ion-view>
+    <div class="list">
+      <div class="item range range-positive">
+        <i class="icon ion-ios-circle-outline"></i>
+        <input type="range" name="volume" min="0" max="360" value="{{rangeVal}}" ng-model="rangeVal">
+        <i class="icon ion-record"></i>
+      </div>
+      <div>{{rangeVal}}</div>
+    </div>
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Direction
+      </div>
+      <select ng-model="select" ng-change="showSelectValue(select)">
+        <option>Clockwise</option>
+        <option>Counterclockwise</option>
+      </select>
+    </label>
+
+  </ion-content>
+</ion-view>
