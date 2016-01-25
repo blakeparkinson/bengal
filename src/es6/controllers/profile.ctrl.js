@@ -17,7 +17,6 @@ $scope.showSelectValue = function(select){
     $scope.clockwise = true;
   }
 };
-console.log(tt);
 
 console.log('yooo');
 
@@ -27,5 +26,4 @@ for (let t = 0; t < 10; t++){
 }
 $scope.gow = gow;
 console.log($scope.gow);
-
 });
