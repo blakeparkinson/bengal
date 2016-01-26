@@ -1,3 +1,11 @@
 .main{
   background-color: black;
 }
+.test{
+  display: none;
+}
+.slick-initialized{
+  .test{
+    display:block;;
+  }
+}

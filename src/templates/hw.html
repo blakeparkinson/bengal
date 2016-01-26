@@ -1,16 +1,7 @@
 <ion-view view-title="test">
   <ion-content>
-    <slick dots="true" infinite="false" speed="300" slides-to-show="5" touch-move="false" slides-to-scroll="1">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>3</div>
-  <div>3</div>
-  <div>3</div>
-  <div>3</div>
-  <div>3</div>
-  <div>3</div>
-  <div>3</div>
+    <slick dots="true" mobile-first=true contextmenu=""infinite="false" speed="300" slides-to-show="5" touch-move="false" slides-to-scroll="1" init-onload="true" data="a">
+  <div class="test" ng-repeat="num in a">{{num}}</div>
 
 
 
