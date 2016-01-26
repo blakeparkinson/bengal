@@ -1,6 +1,10 @@
-starter.controllers.controller('ChatsCtrl', function($scope, Chats) {
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
-});
+'use strict';
+(function() {
+
+  starter.controllers.controller('ChatsCtrl', function($scope, Chats) {
+    $scope.chats = Chats.all();
+    $scope.remove = function(chat) {
+      Chats.remove(chat);
+    };
+  });
+})();

@@ -10,7 +10,7 @@ var starter = {
   services: angular.module('starter.services', [])
 };
 
-starter.app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngCordova', 'angular-svg-round-progress'])
+starter.app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngCordova', 'angular-svg-round-progress', 'slick'])
 
 .run(function($ionicPlatform, $rootScope) {
   $rootScope.VERSION = window.VERSION;
@@ -45,6 +45,12 @@ starter.app = angular.module('starter', ['ionic', 'starter.controllers', 'starte
     url: '/profile',
         templateUrl: 'templates/profile.html',
         controller: 'ProfileCtrl'
+    }
+  )
+  .state('hw', {
+    url: '/hw',
+        templateUrl: 'templates/hw.html',
+        controller: 'HwCtrl'
     }
   )
 
