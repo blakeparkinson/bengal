@@ -36,8 +36,11 @@
     "karma-phantomjs-launcher": "^0.2.3",
     "shelljs": "^0.5.3"
   },
-  "cordovaPlugins": [],
+  "cordovaPlugins": [
+    "cordova-plugin-ble-central"
+  ],
   "cordovaPlatforms": [
-    "ios"
+    "ios",
+    "android"
   ]
 }
