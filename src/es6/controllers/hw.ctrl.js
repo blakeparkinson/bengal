@@ -1,16 +1,12 @@
 'use strict';
 (function() {
-  starter.controllers.controller('HwCtrl', function($scope, $stateParams, bleConfig) {
+  starter.controllers.controller('HwCtrl', function($scope, $stateParams, bleConfig, bleService) {
     $scope.a = [];
     for (let j = 0; j < 15; j++){
       $scope.a.push(j);
     }
-    console.log(ble);
-    console.log('hi');
+    bleService.initializeBLE();
 
-    ble.startScan([], function(){
-      console.log('hi');
-    });
 
   });
 })();
