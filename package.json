@@ -37,7 +37,8 @@
     "shelljs": "^0.5.3"
   },
   "cordovaPlugins": [
-    "cordova-plugin-ble-central"
+    "cordova-plugin-ble-central",
+    "cordova-plugin-splashscreen"
   ],
   "cordovaPlatforms": [
     "ios",
