@@ -78,6 +78,7 @@ gulp.task('wiredep', function () {
             'angular-router.js',
             'ionic.material.js',
             'ionic-angular.js',
+            'lib/jquery/jquery.js',
             'ng-cordova.js'
         ]
     }))
