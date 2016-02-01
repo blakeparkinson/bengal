@@ -18,15 +18,19 @@
 
     $scope.data = 20;
     $scope.options = {
-        width: 75,
+        width: 225,
         fgColor: "#ffec03",
         skin: "tron",
-        thickness: 0.2,
-        displayPrevious: true
+        thickness: 0.5,
+        displayPrevious: true,
+        displayInput: true,
+        min: 0,
+        max: 360
     };
 
 	$scope.formatOptions = function(data) {
-		data.formattedOptions = JSON.stringify(data.options).replace(/,/g,"\n");
+		data.formattedOptions = JSON.stringify($scope.options).replace(/,/g,"\n");
+    console.log(data);
 		return data;
 	};
     //bleService.initializeBLE();

@@ -11,7 +11,7 @@
 
        <div ng-repeat="data in knobData | filter:formatOptions" class="knob-example">
            <pre class="data">{{ data.formattedOptions }}</pre>
-           <knob knob-data="data.value" knob-options="data.options"></knob>
+           <knob knob-data="data.value" knob-options="data.formatOptions" ></knob>
        </div>
    </div>
 </ion-view>
