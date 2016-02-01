@@ -38,7 +38,9 @@
   },
   "cordovaPlugins": [
     "cordova-plugin-ble-central",
-    "cordova-plugin-splashscreen"
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-dialogs"
   ],
   "cordovaPlatforms": [
     "ios",
