@@ -33,7 +33,7 @@
     console.log(data);
 		return data;
 	};
-    //bleService.initializeBLE();
+    bleService.initializeBLE();
 
 
   });
