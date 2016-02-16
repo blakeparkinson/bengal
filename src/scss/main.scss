@@ -9,6 +9,37 @@
     display:block;;
   }
 }
+.c3-event-rects-multiple{
+  cursor: pointer;
+}
 ion-content{
-  background-color: #1E1E1E;
+  background-color: white;
+}
+form {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+circle,
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+circle {
+  fill: #fff;
+  fill-opacity: .2;
+  cursor: move;
+}
+
+.selected {
+  fill: #ff7f0e;
+  stroke: #ff7f0e;
 }

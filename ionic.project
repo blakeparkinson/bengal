@@ -1,6 +1,6 @@
 {
   "name": "ionic-base",
-  "app_id": "",
+  "app_id": "912ee318",
   "gulpStartupTasks": [
     "default",
     "watch"
