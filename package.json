@@ -40,7 +40,13 @@
     "cordova-plugin-ble-central",
     "cordova-plugin-splashscreen",
     "cordova-plugin-statusbar",
-    "cordova-plugin-dialogs"
+    "cordova-plugin-dialogs",
+    "cordova-plugin-file-transfer",
+    "cordova-plugin-whitelist",
+    {
+      "locator": "https://github.com/Telerik-Verified-Plugins/NativePageTransitions",
+      "id": "com.telerik.plugins.nativepagetransitions"
+    }
   ],
   "cordovaPlatforms": [
     "ios",

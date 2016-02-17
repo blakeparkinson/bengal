@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.ionicbase326076" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>ionic-base</name>
+<widget id="com.ionicframework.ionicbase326076" version="0.0.1" xmlns="http:/www.w3.org/ns/widgets" xmlns:cdv="http:/cordova.apache.org/ns/1.0">
+  <name>Pulse</name>
   <description>
-        An Ionic Framework and Cordova project.
-    </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
-    </author>
+    The Pulse app in ionic/cordova
+  </description>
+  <author email="alpinelabs" href="http:/alpinelaboratories.com/">
+    Alpine Laboratories Team
+  </author>
   <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
@@ -14,7 +14,8 @@
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
-  <preference name="SplashScreenDelay" value="3000"/>
+  <preference name="FadeSplashScreen" value="false"/>
+  <preference name="SplashScreenDelay" value="1000"/>
   <feature name="StatusBar">
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>
@@ -35,16 +36,26 @@
     <icon height="29" src="resources/ios/icon/icon-small.png" width="29"/>
     <icon height="58" src="resources/ios/icon/icon-small@2x.png" width="58"/>
     <icon height="87" src="resources/ios/icon/icon-small@3x.png" width="87"/>
-    <splash height="1136" src="resources/ios/splash/Default-568h@2x~iphone.png" width="640"/>
-    <splash height="1334" src="resources/ios/splash/Default-667h.png" width="750"/>
-    <splash height="2208" src="resources/ios/splash/Default-736h.png" width="1242"/>
-    <splash height="1242" src="resources/ios/splash/Default-Landscape-736h.png" width="2208"/>
-    <splash height="1536" src="resources/ios/splash/Default-Landscape@2x~ipad.png" width="2048"/>
-    <splash height="768" src="resources/ios/splash/Default-Landscape~ipad.png" width="1024"/>
-    <splash height="2048" src="resources/ios/splash/Default-Portrait@2x~ipad.png" width="1536"/>
-    <splash height="1024" src="resources/ios/splash/Default-Portrait~ipad.png" width="768"/>
-    <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640"/>
-    <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320"/>
+    <splash height="480" src="resources/ios/splash/Default.png" width="320"/>
+    <splash height="960" src="resources/ios/splash/Default@2x.png" width="640"/>
+    <splash height="2208" src="resources/ios/splash/Default-Portrait-736h@3x.png" width="1242"/>
+    <splash height="1334" src="resources/ios/splash/Default-667h@2x.png" width="750"/>
+    <splash height="1242" src="resources/ios/splash/Default-Landscape-736h@3x.png" width="2208"/>
+    <splash height="960" src="resources/ios/splash/Default@2x~iphone_640x960.png" width="640"/>
+    <splash height="1136" src="resources/ios/splash/Default-568h@2x.png" width="640"/>
+    <splash height="1024" src="resources/ios/splash/Default-Portrait~ipad_768x1024.png" width="768"/>
+    <splash height="2048" src="resources/ios/splash/Default-Portrait@2x.png" width="1536"/>
+    <splash height="768" src="resources/ios/splash/Default-Landscape.png" width="1024"/>
+    <splash height="1536" src="resources/ios/splash/Default-Landscape@2x~ipad_2048x1536-1.png" width="2048"/>
+    <splash height="1136" src="resources/ios/splash/Default-568h@2x~iphone_640x1136.png" width="640"/>
+    <splash height="1004" src="resources/ios/splash/Default-1.png" width="768"/>
+    <splash height="2008" src="resources/ios/splash/Default-Portrait@2x~ipad_1536x2008.png" width="1536"/>
+    <splash height="1024" src="resources/ios/splash/Default-Portrait~ipad_768x1024-1.png" width="768"/>
+    <splash height="2048" src="resources/ios/splash/Default-Portrait@2x~ipad_1536x2048.png" width="1536"/>
+    <splash height="748" src="resources/ios/splash/Default-Landscape~ipad_1024x748-1.png" width="1024"/>
+    <splash height="1496" src="resources/ios/splash/Default-Landscape@2x~ipad_2048x1496.png" width="2048"/>
+    <splash height="768" src="resources/ios/splash/Default-Landscape~ipad_1024x768.png" width="1024"/>
+    <splash height="1536" src="resources/ios/splash/Default-Landscape@2x~ipad_2048x1536.png" width="2048"/>
   </platform>
   <platform name="android">
     <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
@@ -59,12 +70,9 @@
     <splash src="resources/android/splash/drawable-land-xhdpi-screen.png" density="land-xhdpi"/>
     <splash src="resources/android/splash/drawable-land-xxhdpi-screen.png" density="land-xxhdpi"/>
     <splash src="resources/android/splash/drawable-land-xxxhdpi-screen.png" density="land-xxxhdpi"/>
-    <splash src="resources/android/splash/drawable-port-ldpi-screen.png" density="port-ldpi"/>
-    <splash src="resources/android/splash/drawable-port-mdpi-screen.png" density="port-mdpi"/>
-    <splash src="resources/android/splash/drawable-port-hdpi-screen.png" density="port-hdpi"/>
-    <splash src="resources/android/splash/drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
-    <splash src="resources/android/splash/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
-    <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
+    <splash density="port-ldpi" src="resources/androud/splash/drawable-port-ldpi-screen.png"/>
+    <splash density="port-mdpi" src="resources/androud/splash/drawable-port-mdpi-screen.png"/>
+    <splash density="port-hdpi" src="resources/androud/splash/drawable-port-hdpi-screen.png"/>
   </platform>
   <plugin name="cordova-plugin-ble-central" spec="~1.0.4"/>
 </widget>

@@ -7,7 +7,8 @@
 // 'starter.controllers' is found in controllers.js
 var starter = {
   controllers: angular.module('starter.controllers', []),
-  services: angular.module('starter.services', [])
+  services: angular.module('starter.services', []),
+  directives: angular.module('starter.directives', [])
 };
 
 starter.app = angular.module('starter', [
@@ -17,7 +18,8 @@ starter.app = angular.module('starter', [
   'ngCordova',
   'angular-svg-round-progress',
   'slick',
-  'ui.knob'
+  'ui.knob',
+  'ionic-native-transitions'
 ])
 
 .run(function($ionicPlatform, $rootScope) {
@@ -34,7 +36,19 @@ starter.app = angular.module('starter', [
       }
     });
   })
-  .config(function($stateProvider, $urlRouterProvider) {
+  .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider, $ionicNativeTransitionsProvider) {
+
+    $ionicNativeTransitionsProvider.setDefaultTransition({
+        type: 'slide',
+        direction: 'left'
+    });
+
+    $ionicNativeTransitionsProvider.setDefaultBackTransition({
+        type: 'slide',
+        direction: 'right'
+    });
+
+    $ionicConfigProvider.views.transition('none');
 
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router

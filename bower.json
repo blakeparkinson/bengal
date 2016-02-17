@@ -13,6 +13,7 @@
     "jquery": "~2.0.3",
     "jquery-knob": "~1.2.3",
     "angular-knob": "^0.0.2",
-    "ionic-material-design-lite": "^0.5.5"
+    "ionic-material-design-lite": "^0.5.5",
+    "ionic-native-transitions": "shprink/ionic-native-transitions#^1.0.0-rc9"
   }
 }

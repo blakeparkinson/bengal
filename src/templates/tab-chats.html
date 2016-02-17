@@ -1,4 +1,4 @@
-<ion-view view-title="Chats">
+<ion-view view-title="Chats" ng-controller="ChatsCtrl as chat">
   <ion-content>
     <ion-list>
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
@@ -24,6 +24,7 @@
         <input type="range" name="volume" min="0" max="100" value="33">
         <i class="icon ion-ios-sunny"></i>
       </div>
+      <div>{{chat.data.text}}</div>
     </div>
   </ion-content>
 

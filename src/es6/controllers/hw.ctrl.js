@@ -1,12 +1,12 @@
 'use strict';
 (function() {
-  starter.controllers.controller('HwCtrl', function($scope, $stateParams, bleConfig, bleService) {
-    $scope.a = [];
+  starter.controllers.controller('HwCtrl', function($stateParams, bleConfig, bleService) {
+    this.a = [];
     for (let j = 0; j < 15; j++){
-      $scope.a.push(j);
+      this.a.push(j);
     }
 
-    $scope.knobData = [
+    this.knobData = [
 		{
 			value: 30,
 			options: {
@@ -16,8 +16,8 @@
 		}
 	];
 
-    $scope.data = 20;
-    $scope.options = {
+    this.data = 20;
+    this.options = {
         width: 225,
         fgColor: "#ffec03",
         skin: "tron",
@@ -28,7 +28,7 @@
         max: 360
     };
 
-	$scope.formatOptions = function(data) {
+	this.formatOptions = function(data) {
 		data.formattedOptions = JSON.stringify($scope.options).replace(/,/g,"\n");
     console.log(data);
 		return data;

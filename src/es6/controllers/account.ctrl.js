@@ -2,7 +2,7 @@
 
 (function() {
   starter.controllers.controller('AccountCtrl', function($scope) {
-    $scope.settings = {
+    this.settings = {
       enableFriends: true
     };
   });
