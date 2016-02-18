@@ -1,7 +1,6 @@
-'use strict';
 
 (function() {
-
+  'use strict';
 
   starter.services.factory('$localStorage', ['$window', function($window) {
     return {
